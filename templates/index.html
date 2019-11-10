@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Watcix</title>
+    <link rel="stylesheet" href="{% static '/CSS/styleindex.css' %}">
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        /* .logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 450px;
+            height: 450px;
+        }
+        .quote{
+            color: red;
+            text-align: center;
+            font-size: 30px;
+        }
+        .logo1{
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: -63px;
+            width: 400px;
+            height: 400px;
+            animation-duration: 4s;
+        }
+       .logo2{
+            position: absolute;
+            left: 260px;
+            right: 0px;
+            top: 50%;
+            width: 400px;
+            height: 280px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <img class="logo animation-blur-load" onload="doThething()" src="{% static '/Images/logo.jpeg' %}" alt="logo">
+        <!--        <img class="logo1" src="{% static '/Images/logo1.jpeg' %}" alt="logo1">-->
+        <!--        <img class="logo2" src="{% static '/Images/logo2.jpg' %}" alt="logo2">-->
+    </div>
+    <div>
+        <h4 class="quote">Watch Watcix movies & TV shows online or stream right to your smart TV,
+            game console, PC, Mac, mobile, tablet and more</h4>
+    </div>
+
+</body>
+<script>
+    function doThething() {
+        //  window.location.href = "index2";
+        setTimeout(function () {
+            window.location.href = "/home/";
+        }, 5000);
+    }
+</script>
+
+</html>
